@@ -13,7 +13,9 @@ export class History {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({
+    default: 0,
+  })
   price: number;
 
   @Column({
@@ -34,6 +36,9 @@ export class History {
   @JoinColumn({ name: 'clientId' })
   client: Client;
 
-  @Column()
+  @Column({
+    nullable: true,
+    default: false,
+  })
   isPaid: boolean;
 }

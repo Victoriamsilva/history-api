@@ -30,7 +30,7 @@ export class HistoryController {
     return this.historyService.findParked();
   }
 
-  @Get(':id')
+  @Get('/client/:id')
   findByClient(@Param('id') id: string) {
     return this.historyService.findByClient(+id);
   }

@@ -21,9 +21,6 @@ export class Vehicle {
   @Column()
   licensePlate: string;
 
-  @Column({ default: true })
-  isParked: boolean;
-
   @Column({
     default: () => 'CURRENT_TIMESTAMP',
   })
