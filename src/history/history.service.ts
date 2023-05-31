@@ -3,7 +3,7 @@ import { CreateHistoryDto } from './dto/create-history.dto';
 import { UpdateHistoryDto } from './dto/update-history.dto';
 import { History } from './entities/history.entity';
 import { InjectRepository } from '@nestjs/typeorm';
-import { QueryBuilder, Repository } from 'typeorm';
+import { Repository } from 'typeorm';
 
 @Injectable()
 export class HistoryService {
